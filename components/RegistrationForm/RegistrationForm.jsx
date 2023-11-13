@@ -4,7 +4,7 @@ import { fetchCountries } from "../../utils/nationalities";
 import { fetchCities } from "../../utils/cities";
 import Select from "react-select";
 import { useRouter } from "next/router";
-import Welcome from "../welcome/Welcome";
+import Welcome from "../../pages/Welcome";
 
 const RegistrationForm = ({ onComplete }) => {
   const router = useRouter();
@@ -34,7 +34,6 @@ const RegistrationForm = ({ onComplete }) => {
   const handleEnterKey = (e) => {
     if (e.key === "Enter") {
       if (currentQuestionIndex < questions.length - 1) {
-        // Check if the current question is "nationality" or "city"
         if (
           questions[currentQuestionIndex].key === "nationality" ||
           questions[currentQuestionIndex].key === "city"
@@ -49,8 +48,8 @@ const RegistrationForm = ({ onComplete }) => {
         }
       } else {
         console.log("Form submitted:", formData);
-        // Add logic for form submission here
-        onComplete(formData); // Pass the form data to the parent component
+        // TODO: Add logic for form submission here
+        onComplete(formData);
         setShowWelcome(true);
       }
     }
@@ -62,10 +61,9 @@ const RegistrationForm = ({ onComplete }) => {
   };
 
   const handleContinueClick = () => {
-    store.dispatch(submitFormData(formData));
-    onComplete(formData); // Pass the form data to the parent component
+    // store.dispatch(submitFormData(formData));
+    onComplete(formData);
     setShowWelcome(true);
-    router.push(`/welcome?name=${formData.name}`);
   };
 
   const handleCityChange = (selectedOption) => {
