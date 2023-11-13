@@ -1,0 +1,30 @@
+body {
+  font-family: "Calibri", sans-serif;
+  font-weight: 500;
+  color: #333;
+  background-color: #f0f0f0;
+}
+.onboarding {
+  padding: 32px;
+}
+
+.logo {
+  height: 36%;
+  width: 36%;
+}
+
+button {
+  width: 12vw;
+  height: 5vh;
+  border: none;
+  border-radius: 24px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #512acc;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

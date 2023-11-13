@@ -1,0 +1,49 @@
+# Ignore .history directory
+.history
+
+# Ignore Node.js build artifacts
+node_modules
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Next.js build directory
+.next
+
+# Ignore production build output
+out
+
+# Ignore environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore log files
+*.log
+
+# Ignore npm debugging logs
+npm-debug.log*
+
+# Ignore yarn integrity file
+.yarn-integrity
+
+# Ignore Visual Studio Code settings
+.vscode
+
+# Ignore test coverage directory
+coverage
+
+# Ignore OS-generated files
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Ignore npm package-lock files
+package-lock.json
+
+# Ignore yarn lock file
+yarn.lock
