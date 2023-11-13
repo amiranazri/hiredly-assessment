@@ -1,0 +1,18 @@
+[
+    { "value": "developer", "label": "Developer" },
+    { "value": "designer", "label": "Designer" },
+    { "value": "manager", "label": "Manager" },
+    { "value": "engineer", "label": "Engineer" },
+    { "value": "analyst", "label": "Analyst" },
+    { "value": "architect", "label": "Architect" },
+    { "value": "consultant", "label": "Consultant" },
+    { "value": "writer", "label": "Writer" },
+    { "value": "scientist", "label": "Scientist" },
+    { "value": "photographer", "label": "Photographer" },
+    { "value": "entrepreneur", "label": "Entrepreneur" },
+    { "value": "artist", "label": "Artist" },
+    { "value": "teacher", "label": "Teacher" },
+    { "value": "chef", "label": "Chef" },
+    { "value": "doctor", "label": "Doctor" },
+    { "value": "pilot", "label": "Pilot" }
+  ]

@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import styles from "./WorkExperience.module.scss";
 import Select from "react-select";
 
+import occupationOptions from "../../data/occupations.json";
+import industryOptions from "../../data/industries.json";
 
 const WorkExperience = ({ onComplete }) => {
   const [formData, setFormData] = useState({});
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [showContinueButton, setShowContinueButton] = useState(false);
   const [enterKeyPressed, setEnterKeyPressed] = useState(false);
-  const [countryOptions, setCountryOptions] = useState([]);
 
   const questions = [
     { text: `I am a`, key: "occupation" },
@@ -23,6 +24,14 @@ const WorkExperience = ({ onComplete }) => {
     setFormData({ ...formData, [key]: value });
   };
 
+  const handleSelectChange = (selectedOption, actionMeta) => {
+    const key = questions[currentQuestionIndex].key;
+    setFormData({ ...formData, [key]: selectedOption });
+
+    // Increment the currentQuestionIndex when an option is selected
+    setCurrentQuestionIndex(currentQuestionIndex + 1);
+  };
+
   const handleEnterKey = (e) => {
     if (e.key === "Enter") {
       setEnterKeyPressed(true);
@@ -32,6 +41,8 @@ const WorkExperience = ({ onComplete }) => {
           ...formData,
           [questions[currentQuestionIndex].key]: e.target.value.trim(),
         });
+
+        // Increment the currentQuestionIndex when Enter is pressed
         setCurrentQuestionIndex(currentQuestionIndex + 1);
       } else {
         console.log("Form submitted:", formData);
@@ -56,14 +67,21 @@ const WorkExperience = ({ onComplete }) => {
                   index === 0 ? styles.firstRow : ""
                 } ${enterKeyPressed ? styles.hideBorder : ""}`}
               >
-                <input
-                  type="text"
-                  className={styles.inputField}
-                  value={formData[question.key] || ""}
-                  onChange={handleInputChange}
-                  onKeyPress={handleEnterKey}
-                  readOnly={index !== currentQuestionIndex}
-                />
+                {index === currentQuestionIndex ? (
+                  <Select
+                    className={styles.inputField}
+                    classNamePrefix="select"
+                    value={formData[question.key] || ""}
+                    onChange={handleSelectChange}
+                    options={
+                      question.key === "occupation"
+                        ? occupationOptions
+                        : industryOptions
+                    }
+                  />
+                ) : (
+                  <p>{formData[question.key]}</p>
+                )}
               </div>
             </>
           )}
