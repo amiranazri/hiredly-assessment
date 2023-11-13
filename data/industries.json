@@ -1,0 +1,114 @@
+[
+    {
+        "value": "tech",
+        "label": "Technology"
+    },
+    {
+        "value": "finance",
+        "label": "Finance"
+    },
+    {
+        "value": "healthcare",
+        "label": "Healthcare"
+    },
+    {
+        "value": "education",
+        "label": "Education"
+    },
+    {
+        "value": "marketing",
+        "label": "Marketing"
+    },
+    {
+        "value": "entertainment",
+        "label": "Entertainment"
+    },
+    {
+        "value": "hospitality",
+        "label": "Hospitality"
+    },
+    {
+        "value": "automotive",
+        "label": "Automotive"
+    },
+    {
+        "value": "construction",
+        "label": "Construction"
+    },
+    {
+        "value": "fashion",
+        "label": "Fashion"
+    },
+    {
+        "value": "law",
+        "label": "Law"
+    },
+    {
+        "value": "media",
+        "label": "Media"
+    },
+    {
+        "value": "nonprofit",
+        "label": "Nonprofit"
+    },
+    {
+        "value": "real estate",
+        "label": "Real Estate"
+    },
+    {
+        "value": "telecommunications",
+        "label": "Telecommunications"
+    },
+    {
+        "value": "tourism",
+        "label": "Tourism"
+    },
+    {
+        "value": "agriculture",
+        "label": "Agriculture"
+    },
+    {
+        "value": "energy",
+        "label": "Energy"
+    },
+    {
+        "value": "sports",
+        "label": "Sports"
+    },
+    {
+        "value": "retail",
+        "label": "Retail"
+    },
+    {
+        "value": "pharmaceutical",
+        "label": "Pharmaceutical"
+    },
+    {
+        "value": "fitness",
+        "label": "Fitness"
+    },
+    {
+        "value": "environmental",
+        "label": "Environmental"
+    },
+    {
+        "value": "insurance",
+        "label": "Insurance"
+    },
+    {
+        "value": "government",
+        "label": "Government"
+    },
+    {
+        "value": "manufacturing",
+        "label": "Manufacturing"
+    },
+    {
+        "value": "research",
+        "label": "Research"
+    },
+    {
+        "value": "social media",
+        "label": "Social Media"
+    }
+]

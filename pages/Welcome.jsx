@@ -1,5 +1,5 @@
 import React from "react";
-import Welcome from "../components/welcome/Welcome";
+import Welcome from "../components/Welcome/Welcome";
 
 const WelcomePage = () => {
   const userName = router.query.name || "";
